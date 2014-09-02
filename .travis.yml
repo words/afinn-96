@@ -6,3 +6,10 @@ node_js:
 - '0.10'
 - '0.11'
 after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+deploy:
+  provider: npm
+  email: tituswormer@gmail.com
+  api_key:
+    secure: VIrfaqHiHvIdPk0W/2MshEEIHUidwv5rn86wDCmtepPg7oLwQdBJmq/sf/e8FQhRsUJeDJWLUkQ5mX+ugMRJTjxT0HUXHQzEFIUZuLgcYuIYfMxLMSaQB1+ToJJa4DRKNtX69d/P0paIZ1u5TZeiVT7agEB9zwCR8+YlYpdR0d8=
+  on:
+    repo: wooorm/afinn-96

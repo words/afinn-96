@@ -4,7 +4,6 @@ components
 build
 .DS_Store
 coverage
-spec/browser.spec.js
 data/AFINN-96.txt
 *.log
 .travis.yml

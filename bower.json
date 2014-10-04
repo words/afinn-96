@@ -26,9 +26,12 @@
     ".*",
     "*.log",
     "*.md",
+    "*.txt",
     "component.json",
     "package.json",
     "coverage",
+    "components",
+    "build",
     "node_modules",
     "spec"
   ]

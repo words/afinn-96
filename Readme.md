@@ -1,4 +1,4 @@
-# afinn-96 [![Build Status](https://travis-ci.org/wooorm/afinn-96.svg?branch=master)](https://travis-ci.org/wooorm/afinn-96) [![Coverage Status](https://img.shields.io/coveralls/wooorm/afinn-96.svg)](https://coveralls.io/r/wooorm/afinn-96?branch=master)
+# afinn-96 [![Build Status](https://img.shields.io/travis/wooorm/afinn-96.svg?style=flat)](https://travis-ci.org/wooorm/afinn-96) [![Coverage Status](https://img.shields.io/coveralls/wooorm/afinn-96.svg?style=flat)](https://coveralls.io/r/wooorm/afinn-96?branch=master)
 
 Easy access to [AFINN-96](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010).
 

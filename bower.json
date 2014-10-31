@@ -27,12 +27,14 @@
     "*.log",
     "*.md",
     "*.txt",
+    "build/",
+    "components/",
+    "coverage/",
+    "node_modules/",
+    "spec/",
+    "build-data.js",
+    "build-supported-words.js",
     "component.json",
-    "package.json",
-    "coverage",
-    "components",
-    "build",
-    "node_modules",
-    "spec"
+    "package.json"
   ]
 }

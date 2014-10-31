@@ -223,7 +223,7 @@ Supported Words:
 |        cheer       |   :smile:  |    +2   |
 |      cheerful      |   :smile:  |    +2   |
 |      cheering      |   :smile:  |    +2   |
-|       cheers       |   :smile:  |    +3   |
+|       cheers       |   :smile:  |    +2   |
 |       cheery       |   :smile:  |    +3   |
 |      chilling      | :frowning: |    -1   |
 |      clarifies     |   :smile:  |    +2   |
@@ -573,8 +573,8 @@ Supported Words:
 |       fearing      | :frowning: |    -2   |
 |      fearless      |   :smile:  |    +2   |
 |       fed up       | :frowning: |    -3   |
-|       feeling      |   :smile:  |    +1   |
 |       feeble       | :frowning: |    -2   |
+|       feeling      |   :smile:  |    +1   |
 |       felony       | :frowning: |    -3   |
 |      felonies      | :frowning: |    -3   |
 |       fiasco       | :frowning: |    -3   |
@@ -623,12 +623,14 @@ Supported Words:
 |        hail        |   :smile:  |    +2   |
 |       hailed       |   :smile:  |    +2   |
 |        hell        | :frowning: |    -4   |
+|        help        |   :smile:  |    +2   |
 |       helping      |   :smile:  |    +2   |
 |      helpless      | :frowning: |    -2   |
 |        helps       |   :smile:  |    +2   |
 |        hero        |   :smile:  |    +2   |
 |       heroes       |   :smile:  |    +2   |
 |       heroic       |   :smile:  |    +3   |
+|       hunger       | :frowning: |    -2   |
 |        hurt        | :frowning: |    -2   |
 |       hurting      | :frowning: |    -2   |
 |        hurts       | :frowning: |    -2   |
@@ -640,7 +642,7 @@ Supported Words:
 |        gains       |   :smile:  |    +2   |
 |        ghost       | :frowning: |    -1   |
 |        glad        |   :smile:  |    +3   |
-|      abandons      | :frowning: |    -2   |
+|        gloom       | :frowning: |    -1   |
 |      glorious      |   :smile:  |    +2   |
 |         god        |   :smile:  |    +1   |
 |       goddamn      | :frowning: |    -3   |
@@ -693,7 +695,6 @@ Supported Words:
 |        havoc       | :frowning: |    -2   |
 |       healthy      |   :smile:  |    +2   |
 |     heartbroken    | :frowning: |    -3   |
-|        help        |   :smile:  |    +2   |
 |      highlight     |   :smile:  |    +2   |
 |      hilarious     |   :smile:  |    +2   |
 |        hoax        | :frowning: |    -2   |
@@ -718,7 +719,6 @@ Supported Words:
 |        humor       |   :smile:  |    +3   |
 |       humour       |   :smile:  |    +3   |
 |       hurrah       |   :smile:  |    +5   |
-|       hunger       | :frowning: |    -2   |
 |      hysteria      | :frowning: |    -3   |
 |       growth       |   :smile:  |    +2   |
 |        idiot       | :frowning: |    -3   |
@@ -831,7 +831,7 @@ Supported Words:
 |        laugh       |   :smile:  |    +1   |
 |       laughs       |   :smile:  |    +1   |
 |      laughing      |   :smile:  |    +1   |
-|      launched      |   :smile:  |    +1   |
+|      abandons      | :frowning: |    -2   |
 |       lawsuit      | :frowning: |    -2   |
 |      lawsuits      | :frowning: |    -2   |
 |        leak        | :frowning: |    -1   |
@@ -1265,6 +1265,7 @@ Supported Words:
 |    strengthening   |   :smile:  |    +2   |
 |    strengthened    |   :smile:  |    +2   |
 |     strengthens    |   :smile:  |    +2   |
+|       strike       | :frowning: |    -2   |
 |      strikers      | :frowning: |    -2   |
 |       strikes      | :frowning: |    -1   |
 |       strong       |   :smile:  |    +2   |
@@ -1274,6 +1275,7 @@ Supported Words:
 |       stupid       | :frowning: |    -2   |
 |       success      |   :smile:  |    +2   |
 |     successful     |   :smile:  |    +3   |
+|       suffer       | :frowning: |    -2   |
 |       suffers      | :frowning: |    -2   |
 |       suicide      | :frowning: |    -2   |
 |        suing       | :frowning: |    -2   |
@@ -1281,9 +1283,12 @@ Supported Words:
 |      sunshine      |   :smile:  |    +2   |
 |        super       |   :smile:  |    +3   |
 |       superb       |   :smile:  |    +5   |
+|       support      |   :smile:  |    +1   |
+|      supported     |   :smile:  |    +1   |
 |      supporter     |   :smile:  |    +1   |
 |     supporters     |   :smile:  |    +1   |
 |     supportive     |   :smile:  |    +2   |
+|      supports      |   :smile:  |    +1   |
 |      survived      |   :smile:  |    +2   |
 |      surviving     |   :smile:  |    +2   |
 |      survivor      |   :smile:  |    +2   |
@@ -1297,16 +1302,11 @@ Supported Words:
 |      straight      |   :smile:  |    +1   |
 |      stressor      | :frowning: |    -2   |
 |      stressors     | :frowning: |    -2   |
-|       strike       | :frowning: |    -2   |
 |     substantial    |   :smile:  |    +1   |
 |        suck        | :frowning: |    -3   |
 |        sucks       | :frowning: |    -3   |
-|       suffer       | :frowning: |    -2   |
 |      suffering     | :frowning: |    -2   |
-|       support      |   :smile:  |    +1   |
-|      supported     |   :smile:  |    +1   |
 |     supporting     |   :smile:  |    +1   |
-|      supports      |   :smile:  |    +1   |
 |        sweet       |   :smile:  |    +2   |
 |        swift       |   :smile:  |    +2   |
 |       swiftly      |   :smile:  |    +2   |
@@ -1393,6 +1393,7 @@ Supported Words:
 |       useless      | :frowning: |    -2   |
 |     uselessness    | :frowning: |    -2   |
 |       vested       |   :smile:  |    +1   |
+|     vulnerable     | :frowning: |    -2   |
 |        yeah        |   :smile:  |    +1   |
 |         yes        |   :smile:  |    +1   |
 |        yeees       |   :smile:  |    +2   |
@@ -1412,7 +1413,6 @@ Supported Words:
 |      visioning     |   :smile:  |    +1   |
 |      vitality      |   :smile:  |    +3   |
 |       vitamin      |   :smile:  |    +1   |
-|     vulnerable     | :frowning: |    -2   |
 |       walkout      | :frowning: |    -2   |
 |      walkouts      | :frowning: |    -2   |
 |        want        |   :smile:  |    +1   |
@@ -1420,10 +1420,10 @@ Supported Words:
 |       warfare      | :frowning: |    -2   |
 |        warm        |   :smile:  |    +1   |
 |       warmth       |   :smile:  |    +2   |
+|       warning      | :frowning: |    -2   |
 |      warnings      | :frowning: |    -3   |
 |        warn        | :frowning: |    -2   |
 |       warned       | :frowning: |    -2   |
-|       warning      | :frowning: |    -2   |
 |        warns       | :frowning: |    -2   |
 |        waste       | :frowning: |    -1   |
 |       wasted       | :frowning: |    -2   |
@@ -1470,4 +1470,4 @@ Supported Words:
 |        wowww       |   :smile:  |    +4   |
 |        wrong       | :frowning: |    -2   |
 |       zealot       | :frowning: |    -2   |
-|        gloom       | :frowning: |    -1   |
+|      launched      |   :smile:  |    +1   |

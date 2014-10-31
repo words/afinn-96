@@ -31,15 +31,17 @@
   "scripts": {
     "test": "node_modules/.bin/_mocha --reporter spec --check-leaks -u exports test.js",
     "test-travis": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter spec --check-leaks -u exports test.js",
+    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- test.js",
     "lint": "npm run lint-api && npm run lint-test && npm run lint-script && npm run lint-style",
     "lint-api": "node_modules/.bin/eslint index.js",
     "lint-test": "node_modules/.bin/eslint test.js --env mocha",
     "lint-script": "node_modules/.bin/eslint script/build-data.js script/build-support.js",
     "lint-style": "node_modules/.bin/jscs index.js script/build-data.js script/build-support.js test.js --reporter=inline",
-    "build-data": "node script/build-data.js",
+    "make": "npm run lint && npm run coverage",
+    "scrape-data": "curl --connect-timeout 15 --max-time 20 -L http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/6010/zip/imm6010.zip -o data/afinn.zip || exit 0",
+    "unzip-data": "unzip -o -d data data/afinn.zip || exit 0",
+    "build-data": "node script/build-data.js || exit 0",
     "build-support": "node script/build-support.js",
-    "coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -- test.js",
-    "prepublish": "npm run build-data && npm run build-support",
-    "make": "npm run lint && npm run coverage"
+    "prepublish": "npm run scrape-data && npm run unzip-data && npm run build-data && npm run build-support"
   }
 }

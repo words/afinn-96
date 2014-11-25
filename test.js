@@ -1,9 +1,18 @@
 'use strict';
 
-var afinn, assert;
+/**
+ * Dependencies.
+ */
+
+var afinn,
+    assert;
 
 afinn = require('./');
 assert = require('assert');
+
+/**
+ * Tests.
+ */
 
 describe('afinn-96()', function () {
     it('should be of type `object`', function () {

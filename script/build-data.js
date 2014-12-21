@@ -1,6 +1,6 @@
 'use strict';
 
-/**
+/*
  * Dependencies.
  */
 
@@ -10,7 +10,7 @@ var fs,
 toJSON = require('plain-text-data-to-json');
 fs = require('fs');
 
-/**
+/*
  * Data.
  */
 
@@ -21,7 +21,7 @@ data = toJSON(fs.readFileSync('data/AFINN/AFINN-96.txt', 'utf8'), {
     'forgiving': 'fix'
 });
 
-/**
+/*
  * Parse.
  */
 
@@ -29,7 +29,7 @@ Object.keys(data).forEach(function (key) {
     data[key] = Number(data[key]);
 });
 
-/**
+/*
  * Write.
  */
 

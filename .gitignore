@@ -1,9 +1,8 @@
 .DS_Store
-*.zip
 *.log
-bower_components/
-build/
-components/
-data/AFINN/
-node_modules/
+.nyc_output/
 coverage/
+data/
+node_modules/
+afinn-96.js
+afinn-96.min.js

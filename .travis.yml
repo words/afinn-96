@@ -1,13 +1,26 @@
 language: node_js
-script: npm run-script test-travis
+sudo: false
 node_js:
-- '0.10'
 - '0.11'
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+- '0.12'
+- '4.0'
+- '5.0'
+- '6.0'
+after_success: bash <(curl -s https://codecov.io/bash)
 deploy:
-  provider: npm
-  email: tituswormer@gmail.com
-  api_key:
-    secure: VIrfaqHiHvIdPk0W/2MshEEIHUidwv5rn86wDCmtepPg7oLwQdBJmq/sf/e8FQhRsUJeDJWLUkQ5mX+ugMRJTjxT0HUXHQzEFIUZuLgcYuIYfMxLMSaQB1+ToJJa4DRKNtX69d/P0paIZ1u5TZeiVT7agEB9zwCR8+YlYpdR0d8=
-  on:
-    repo: wooorm/afinn-96
+  - provider: npm
+    email: tituswormer@gmail.com
+    api_key:
+      secure: ZIRIvMbRhYBceujQMt6GUtUD+cvIrbOlx/NKUCaByDjPMKQJeYqh6An79OQvfWt8Wauba5yLbTqSKzCe94zcxTfsXFzg8jBQIuHH8kuGMQJeFWyn/qZYrfxySnDfjOEXmrDQ6/CpCRX/xnJMBmy49H9FXmo9enBVBqqrSFA3Ijs=
+    on:
+      tags: true
+      node: '5.0'
+  - provider: releases
+    api_key:
+      secure: ecLbntfUMYhGv0V7uyv0BIIt6s2x05/dXC1B8x7+qQw7/edh065/LekjNz+G0sy3yXH8Ud+4RM6gl4vqPrAlPXWClqUPAo9KwuWsZe2TqIZwrXwTTdE/vgwa3G6A5iuP+pmS6PLzdwWcM3osdSJHkJSxzkdxasbeYYzWLAIuF+0=
+    file:
+      - "afinn-96.js"
+      - "afinn-96.min.js"
+    on:
+      tags: true
+      node: '6.0'

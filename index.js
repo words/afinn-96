@@ -1,7 +1,12 @@
-'use strict';
-
-/*
- * Expose `afinn-96`
+/**
+ * @author Titus Wormer
+ * @copyright 2014 Titus Wormer
+ * @license MIT
+ * @module afinn-96
+ * @fileoverview AFINN 96 (list of English words rated for valence) in JSON.
  */
 
-module.exports = require('./data/afinn-96.json');
+'use strict';
+
+/* Expose. */
+module.exports = require('./index.json');

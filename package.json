@@ -43,7 +43,7 @@
   },
   "scripts": {
     "build-md": "remark . --quiet --frail",
-    "build-generate": "node script/generate.js",
+    "build-generate": "node build",
     "build-bundle": "browserify index.json --bare -s afinn96 > afinn-96.js",
     "build-mangle": "esmangle afinn-96.js > afinn-96.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",

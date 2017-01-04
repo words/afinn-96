@@ -2,8 +2,8 @@
 
 Easy access to [AFINN-96][afinn96].
 
-AFINN-96 is the lightweight (1468 words/phrases), older, version of
-[AFINN-111][afinn111] (2477 words/phrases).
+AFINN 96 is the lightweight (1468 words/phrases), older, version of
+[AFINN 165][afinn165] (3382 words/phrases).
 
 ## Installation
 
@@ -64,4 +64,4 @@ Note the AFINN entries are:
 
 [afinn96]: http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010
 
-[afinn111]: https://github.com/wooorm/afinn-111
+[afinn165]: https://github.com/wooorm/afinn-165

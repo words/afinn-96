@@ -2,7 +2,6 @@ language: node_js
 sudo: false
 node_js:
 - '4.0'
-- '5.0'
 - '7.0'
 deploy:
   - provider: npm
@@ -11,7 +10,7 @@ deploy:
       secure: ZIRIvMbRhYBceujQMt6GUtUD+cvIrbOlx/NKUCaByDjPMKQJeYqh6An79OQvfWt8Wauba5yLbTqSKzCe94zcxTfsXFzg8jBQIuHH8kuGMQJeFWyn/qZYrfxySnDfjOEXmrDQ6/CpCRX/xnJMBmy49H9FXmo9enBVBqqrSFA3Ijs=
     on:
       tags: true
-      node: '5.0'
+      node: '4.0'
   - provider: releases
     api_key:
       secure: ecLbntfUMYhGv0V7uyv0BIIt6s2x05/dXC1B8x7+qQw7/edh065/LekjNz+G0sy3yXH8Ud+4RM6gl4vqPrAlPXWClqUPAo9KwuWsZe2TqIZwrXwTTdE/vgwa3G6A5iuP+pmS6PLzdwWcM3osdSJHkJSxzkdxasbeYYzWLAIuF+0=

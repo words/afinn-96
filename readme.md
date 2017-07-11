@@ -7,7 +7,7 @@ AFINN 96 is the lightweight (1468 words/phrases), older, version of
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install afinn-96
@@ -18,8 +18,8 @@ npm install afinn-96
 ```js
 var afinn = require('afinn-96');
 
-afinn.positive; // 2
-afinn['fed up']; // -3
+afinn.positive; //=> 2
+afinn['fed up']; //=> -3
 ```
 
 ## API
@@ -37,25 +37,25 @@ afinn['fed up']; // -3
 
 Note the AFINN entries are:
 
-*   All lower case;
+*   All lower case
 *   Can contain spaces (cases: `can't stand`, `cashing in`,
     `cool stuff`, `does not work`, `dont like`, `fed up`, `green wash`,
     `green washing`, `messing up`, `no fun`, `not good`, `not working`,
-    `right direction`, `screwed up`, `some kind`);
-*   Can contain apostrophes (only case: `can't stand`);
+    `right direction`, `screwed up`, `some kind`)
+*   Can contain apostrophes (only case: `can't stand`)
 *   Can contain dashes (cases: `cover-up`, `made-up`, `short-sighted`,
-    `short-sightedness`, `son-of-a-bitch`).
+    `short-sightedness`, `son-of-a-bitch`)
 
 ## Related
 
-*   [afinn-111](https://github.com/wooorm/afinn-111)
-    — AFINN list from 2011, containing 2477 entries;
-*   [afinn-165](https://github.com/wooorm/afinn-165)
-    — AFINN list from 2015, containing 3382 entries;
-*   [emoji-emotion](https://github.com/wooorm/emoji-emotion)
-    — Like AFINN, but for emoji;
-*   [polarity](https://github.com/wooorm/polarity)
-    — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`.
+*   [`afinn-111`](https://github.com/wooorm/afinn-111)
+    — AFINN list from 2011, containing 2477 entries
+*   [`afinn-165`](https://github.com/wooorm/afinn-165)
+    — AFINN list from 2015, containing 3382 entries
+*   [`emoji-emotion`](https://github.com/wooorm/emoji-emotion)
+    — Like AFINN, but for emoji
+*   [`polarity`](https://github.com/wooorm/polarity)
+    — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`
 
 ## License
 
@@ -67,7 +67,7 @@ Note the AFINN entries are:
 
 [travis]: https://travis-ci.org/wooorm/afinn-96
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 

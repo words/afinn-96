@@ -2,7 +2,7 @@ language: node_js
 sudo: false
 node_js:
 - '4.0'
-- '7.0'
+- '8.0'
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
@@ -19,4 +19,4 @@ deploy:
       - "afinn-96.min.js"
     on:
       tags: true
-      node: '7.0'
+      node: '8.0'

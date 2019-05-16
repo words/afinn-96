@@ -28,30 +28,36 @@
   "dependencies": {},
   "devDependencies": {
     "bail": "^1.0.1",
-    "browserify": "^14.0.0",
-    "csv-streamify": "^3.0.4",
-    "esmangle": "^1.0.1",
+    "browserify": "^16.0.0",
+    "csv-streamify": "^4.0.0",
     "join-stream": "0.0.0",
-    "readable-stream": "^2.1.4",
-    "remark-cli": "^4.0.0",
-    "remark-preset-wooorm": "^3.0.0",
+    "readable-stream": "^3.0.0",
+    "remark-cli": "^6.0.0",
+    "remark-preset-wooorm": "^5.0.0",
     "tape": "^4.0.0",
+    "tinyify": "^2.5.0",
     "unzip": "^0.1.11",
     "wrap-stream": "^2.0.0",
-    "xo": "^0.18.0"
+    "xo": "^0.24.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
-    "build-generate": "node build",
-    "build-bundle": "browserify index.json --bare -s afinn96 > afinn-96.js",
-    "build-mangle": "esmangle afinn-96.js > afinn-96.min.js",
-    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
-    "lint": "xo",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "build-bundle": "browserify index.json -s afinn96 -o afinn-96.js",
+    "build-mangle": "browserify index.json -s afinn96 -p tinyify -o afinn-96.min.js",
+    "build": "npm run build-bundle && npm run build-mangle",
     "test-api": "node test",
-    "test": "npm run build && npm run lint && npm run test-api"
+    "test": "npm run format && npm run build && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "ignores": [
       "afinn-96.js"

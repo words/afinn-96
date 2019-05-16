@@ -16,10 +16,10 @@ npm install afinn-96
 ## Usage
 
 ```js
-var afinn = require('afinn-96');
+var afinn = require('afinn-96')
 
-afinn.positive; //=> 2
-afinn['fed up']; //=> -3
+afinn.positive // => 2
+afinn['fed up'] // => -3
 ```
 
 ## API

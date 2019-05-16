@@ -2,6 +2,7 @@
 *.log
 data/
 node_modules/
+archive.zip
 afinn-96.js
 afinn-96.min.js
 yarn.lock

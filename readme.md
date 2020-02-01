@@ -6,18 +6,18 @@
 
 Easy access to [AFINN-96][afinn96].
 
-AFINN 96 is the lightweight (1468 words/phrases), older, version of
+AFINN 96 is the lightweight (1468 words/phrases) and older version of
 [AFINN 165][afinn165] (3382 words/phrases).
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install afinn-96
 ```
 
-## Usage
+## Use
 
 ```js
 var afinn = require('afinn-96')
@@ -30,12 +30,12 @@ afinn['fed up'] // => -3
 
 ### `afinn96`
 
-**afinn-96** returns entries to valence ratings (`Object.<string, number>`).
+`afinn-96` returns entries to valence ratings (`Object.<number>`).
 
-> Note!  Be careful when accessing unknown properties on the
-> **afinn-96** object, words such as “constructor” or “toString”
-> might occur.  It’s recommended to use a `hasOwnProperty` check
-> beforehand.
+> Note!
+> Be careful when accessing unknown properties on the `afinn-96` object, words
+> such as `constructor` or `toString` might occur.
+> It’s recommended to use a `hasOwnProperty` check beforehand.
 
 ## Musings
 

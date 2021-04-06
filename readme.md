@@ -1,6 +1,7 @@
 # afinn-96
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -67,9 +68,13 @@ Note the AFINN entries are:
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/afinn-96.svg
+[build-badge]: https://github.com/words/afinn-96/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/afinn-96
+[build]: https://github.com/words/afinn-96/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/words/afinn-96.svg
+
+[coverage]: https://codecov.io/github/words/afinn-96
 
 [downloads-badge]: https://img.shields.io/npm/dm/afinn-96.svg
 

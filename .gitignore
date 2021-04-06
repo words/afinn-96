@@ -1,5 +1,6 @@
 .DS_Store
 *.log
+coverage/
 data/
 node_modules/
 archive.zip

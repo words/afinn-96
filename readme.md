@@ -12,6 +12,9 @@ AFINN 96 is the lightweight (1468 words/phrases) and older version of
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -21,13 +24,16 @@ npm install afinn-96
 ## Use
 
 ```js
-var afinn = require('afinn-96')
+import {afinn96} from 'afinn-96'
 
-afinn.positive // => 2
-afinn['fed up'] // => -3
+afinn96.positive // => 2
+afinn96['fed up'] // => -3
 ```
 
 ## API
+
+This package exports the following identifiers: `afinn96`.
+There is no default export.
 
 ### `afinn96`
 

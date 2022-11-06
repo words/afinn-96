@@ -28,7 +28,7 @@ function onclose() {
 
 /**
  * @param {Error?} error
- * @param {import('yauzl').ZipFile?} archive
+ * @param {import('yauzl').ZipFile} archive
  */
 function onopen(error, archive) {
   bail(error)
@@ -52,7 +52,7 @@ function onopen(error, archive) {
 
   /**
    * @param {Error?} error
-   * @param {import('stream').Readable?} rs
+   * @param {import('stream').Readable} rs
    */
   function onreadstream(error, rs) {
     bail(error)
@@ -64,12 +64,16 @@ function onopen(error, archive) {
    * @param {Buffer} buf
    */
   function onconcat(buf) {
+    /** @type {Record<string, number>} */
     const data = {}
     const rows = dsv.tsvParse('key\tvalue\n' + String(buf))
     let index = -1
 
     while (++index < rows.length) {
-      data[rows[index].key] = Number.parseInt(rows[index].value, 10)
+      const row = rows[index]
+      if (row.value && row.key) {
+        data[row.key] = Number.parseInt(row.value, 10)
+      }
     }
 
     fs.writeFile(

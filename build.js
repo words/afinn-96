@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import https from 'node:https'
 import yauzl from 'yauzl'
-import dsv from 'd3-dsv'
+import {tsvParse} from 'd3-dsv'
 import concat from 'concat-stream'
 import {bail} from 'bail'
 
@@ -66,7 +66,7 @@ function onopen(error, archive) {
   function onconcat(buf) {
     /** @type {Record<string, number>} */
     const data = {}
-    const rows = dsv.tsvParse('key\tvalue\n' + String(buf))
+    const rows = tsvParse('key\tvalue\n' + String(buf))
     let index = -1
 
     while (++index < rows.length) {
@@ -78,7 +78,9 @@ function onopen(error, archive) {
 
     fs.writeFile(
       'index.js',
-      'export const afinn96 = ' + JSON.stringify(data, null, 2) + '\n',
+      '/**\n * AFINN-96\n * @type {Record<string, number>}\n*/\nexport const afinn96 = ' +
+        JSON.stringify(data, null, 2) +
+        '\n',
       bail
     )
   }

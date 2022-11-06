@@ -1,4 +1,4 @@
-export var afinn96 = {
+export const afinn96 = {
   abandon: -2,
   abandons: -2,
   abandoned: -2,

@@ -6,9 +6,9 @@ import dsv from 'd3-dsv'
 import concat from 'concat-stream'
 import {bail} from 'bail'
 
-var endpoint = 'https://www2.imm.dtu.dk/pubdb/edoc/imm6010.zip'
+const endpoint = 'https://www2.imm.dtu.dk/pubdb/edoc/imm6010.zip'
 
-var found = false
+let found = false
 
 https.get(endpoint, onresult)
 
@@ -64,9 +64,9 @@ function onopen(error, archive) {
    * @param {Buffer} buf
    */
   function onconcat(buf) {
-    var data = {}
-    var rows = dsv.tsvParse('key\tvalue\n' + String(buf))
-    var index = -1
+    const data = {}
+    const rows = dsv.tsvParse('key\tvalue\n' + String(buf))
+    let index = -1
 
     while (++index < rows.length) {
       data[rows[index].key] = Number.parseInt(rows[index].value, 10)
@@ -74,7 +74,7 @@ function onopen(error, archive) {
 
     fs.writeFile(
       'index.js',
-      'export var afinn96 = ' + JSON.stringify(data, null, 2) + '\n',
+      'export const afinn96 = ' + JSON.stringify(data, null, 2) + '\n',
       bail
     )
   }
